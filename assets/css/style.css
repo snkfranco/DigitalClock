@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(95deg, #101010, #1A7EB4);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,.5);
+}
+
+.clock > div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5,5,5,.9);
+    box-shadow: 0px 8px 10px rgba(0,0,0,.7);
+    border-radius: 0.5rem;
+    letter-spacing: 3px;
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.clock span.time{
+    font-size: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 20rem; /* Altere este valor conforme necessário para ajustar a posição vertical */
+    width: 100vw;
+    background-color: transparent; /* cor de fundo opcional */
+    padding: 10px; /* margem interna opcional */
+    text-align: center; /* centralizar o texto */
+    color: #6E91AC;
+}
+
+.clock > div {
+    /* Outros estilos */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos ao efeito de transformação */
+}
+
+.clock > div:hover {
+    /* Outros estilos */
+    cursor: crosshair; /* Altera o cursor para indicar que é clicável */
+    transform: scale(1.05); /* Escala o elemento para 1.05 quando hover */
+}
+
+footer > span {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #6E91AC; /* Cor do texto padrão */
+    /* text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF; Adiciona sombras de texto com cores vibrantes */
+    transition: text-shadow 0.5s ease; /* Adiciona uma transição suave ao efeito de sombra de texto */
+}
+
+footer > span:hover {
+    cursor: crosshair; /* Altera o cursor para indicar que é clicável */
+    color: #FFF;
+    text-shadow: 0 0 3px #6ECDF5, 0 0 5px #6ECDF5, 0 0 7px #6ECDF5, 0 0 15px #6ECDF5; /* Altera as cores das sombras de texto no hover */
+}
