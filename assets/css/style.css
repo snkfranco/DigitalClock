@@ -11,7 +11,9 @@ body {
     background: linear-gradient(95deg, #101010, #1A7EB4);
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
+
+    flex-direction: column;
 }
 
 .clock {
@@ -49,8 +51,8 @@ body {
 }
 
 footer {
-    position: fixed;
-    bottom: 20rem; /* Altere este valor conforme necessário para ajustar a posição vertical */
+    position:fixed;
+    bottom: 10rem; /* Altere este valor conforme necessário para ajustar a posição vertical */
     width: 100vw;
     background-color: transparent; /* cor de fundo opcional */
     padding: 10px; /* margem interna opcional */
@@ -80,4 +82,8 @@ footer > span:hover {
     cursor: crosshair; /* Altera o cursor para indicar que é clicável */
     color: #FFF;
     text-shadow: 0 0 3px #6ECDF5, 0 0 5px #6ECDF5, 0 0 7px #6ECDF5, 0 0 15px #6ECDF5; /* Altera as cores das sombras de texto no hover */
+}
+
+.calender {
+    margin-top: 4rem;
 }
