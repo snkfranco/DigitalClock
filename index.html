@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Digital Clock</title>
 </head>
 
 <body>
+
+    <div class="menu">
+        <span class="material-icons">
+            menu
+        </span>
+        <div class="menu-flutuante">
+            <span class="material-icons">location_on
+                <input class="search_city" placeholder="Type your city">
+            </span>
+            <button class="search_city_button">Search</button>
+            
+        </div>
+    </div>
+
+    
+
     <div class="clock">
         <div>
             <span id="hours">00</span>
-            <span class="time">Horas</span>
+            <span class="time">Hours</span>
         </div>
 
         <div>
@@ -25,12 +43,22 @@
         </div>
     </div>
 
-    <!-- <div>
-        <span class="calender">Mes</span>
-    </div> -->
+    <div class="weather">
+        <span class="material-icons">location_on
+            <span class="city">New York</span>
+        </span>
+
+        <span class="material-icons">thermostat
+            <span class="temp">0</span>
+        </span>
+
+        <span class="material-icons">water_drop
+            <span class="humidity">Humidade</span>
+        </span>
+    </div>
 
     <footer>
-        <span>Made with 💪🏼 by eSieNiKa</span>
+        <span>Made with 💪🏼 by Matheus Franco</span>
     </footer>
 
     <script src="assets/js/script.js"></script>
