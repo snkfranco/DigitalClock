@@ -52,7 +52,7 @@ body {
 
 footer {
     position:fixed;
-    bottom: 10rem; /* Altere este valor conforme necessário para ajustar a posição vertical */
+    bottom: 5px; 
     width: 100vw;
     background-color: transparent; /* cor de fundo opcional */
     padding: 10px; /* margem interna opcional */
@@ -86,4 +86,106 @@ footer > span:hover {
 
 .calender {
     margin-top: 4rem;
+}
+
+.material-icons{
+    color: #F8F8FF;
+}
+
+.weather{
+    margin: 2rem;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 20rem;
+    background: transparent;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,.5);
+    transition: transform 0.5s ease, background 0.5s ease;
+
+}
+
+.weather:hover{
+    cursor: crosshair;
+    transform: scale(1.03);
+    background: #476893;
+}
+
+.weather span{
+    letter-spacing: 1.1px;
+}
+
+.menu{
+    box-shadow: 0px 8px 10px rgba(0,0,0,.5);
+    border-radius: 5rem;
+    padding: 10px;
+    width: 23px;
+    height: 23px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 90vh;
+    right: 95vw;
+    transition: transform 0.5s ease;
+    transition: background 2s ease;
+}
+
+.menu:hover{
+    /* transform: scale(1.08); */
+    cursor: crosshair;
+    background: #476893;
+}
+
+.menu-flutuante {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    border-radius: 1rem;
+    width: 200px;
+    padding: 1rem;
+    flex-direction: column;
+    margin-top: 8px;
+    align-items: flex-end;
+    transition: background 0.7s ease;
+}
+
+.menu-flutuante:hover{
+    background: #476893;
+}
+
+.menu-flutuante.mostrar {
+    display: block;
+}
+
+.search_city {
+    border:cyan; /* Remove a borda padrão do input */
+    outline:none; /* Remove o contorno ao focar no input */
+    padding: 10px; /* Adiciona algum preenchimento ao redor do input */
+    margin-bottom: 10px; /* Adiciona um espaço entre o input e o botão */
+    border-radius: 5px;
+    background: transparent;
+    /* border-color: white; */
+    line-height: 20px;
+    color: white;
+    outline-color: #476893;
+
+}
+
+.search_city_button {
+    align-self: center;
+    padding: 8px 16px;
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar no botão */
+    border-radius: 5px;
+    background: #8BA5B3;
+    color: #fff; /* Define a cor do texto como branco */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    margin-top: auto
 }
